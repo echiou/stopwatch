@@ -60,15 +60,16 @@ function pad(num, size) {
 }
 
 function formatTime(time) {
-  var m = s = ms = 0;
+  var m = s = cs = 0;
   var newTime = '';
 
   m = Math.floor( time / (60 * 1000) );
   time = time % (60 * 1000);
   s = Math.floor( time / 1000 );
-  ms = time % 1000;
+  time = time % 1000
+  cs = Math.floor(time / 10);
 
-  newTime = pad(m, 2) + ':' + pad(s, 2) + ':' + pad(ms, 3);
+  newTime = pad(m, 2) + ':' + pad(s, 2) + '.' + pad(cs, 2);
   return newTime;
 }
 
