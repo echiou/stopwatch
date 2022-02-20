@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'test',
+    siteUrl: 'https://echiou.com',
+    title: 'stopwatch',
   },
+  pathPrefix: "/stopwatch",
   plugins: ['gatsby-plugin-sass'],
 };
