@@ -1,0 +1,34 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "test",
+  "author": "Ethan Chiou",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "format": "prettier . --write && eslint --fix '*.{js,jsx,ts,tsx}'",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "cirrus-ui": "^0.6.3",
+    "gatsby": "^4.4.0",
+    "gatsby-plugin-sass": "^5.7.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.49.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-typescript-prettier": "^5.0.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.5.1",
+    "typescript": "4.4.4"
+  }
+}
