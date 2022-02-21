@@ -1055,6 +1055,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/cutive-mono@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/cutive-mono/-/cutive-mono-4.5.3.tgz#6cdd1f993bf15e1b888a24241d1ad06d308fee56"
+  integrity sha512-3JbQHHSO+IhSHgN1UHUnoeyMUTbrKygJ9mGN78yCagwZGJPaJse3ayUa0Vyq4+uqzaEpOuS2pU7pOAnG/crj+Q==
+
 "@gatsbyjs/reach-router@^1.3.6":
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/reach-router/-/reach-router-1.3.6.tgz#4e8225836959be247890b66f21a3198a0589e34d"

@@ -17,6 +17,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/cutive-mono": "^4.5.3",
     "cirrus-ui": "^0.6.3",
     "gatsby": "^4.4.0",
     "gatsby-plugin-sass": "^5.7.0",
