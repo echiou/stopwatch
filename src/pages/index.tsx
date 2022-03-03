@@ -80,7 +80,7 @@ class Timer extends React.Component<any, any> {
     return (
       <div className="row u-text-center">
         <div className="col-12">
-          <h1 style={mono}>{this.formatTime(this.state.cs)}</h1>
+          <h1 className="headline-1 font-light" style={mono}>{this.formatTime(this.state.cs)}</h1>
         </div>
         <div className="col-12">
           <div className="btn-group">
