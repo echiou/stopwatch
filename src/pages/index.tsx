@@ -2,6 +2,8 @@ import 'cirrus-ui';
 import * as React from 'react';
 import '@fontsource/cutive-mono';
 
+import EcButton from '../components/ecButton';
+
 const mono = {
   fontFamily: 'Cutive Mono',
 };
@@ -82,15 +84,8 @@ class Timer extends React.Component<any, any> {
         </div>
         <div className="col-12">
           <div className="btn-group">
-            <button
-              onClick={this.startStop}
-              className="btn-small btn-dark outline"
-            >
-              Start/Stop
-            </button>
-            <button onClick={this.reset} className="btn-small btn-dark outline">
-              Reset
-            </button>
+            <EcButton text="Start/Stop" fn={this.startStop} />
+            <EcButton text="Reset" fn={this.reset} />
           </div>
         </div>
       </div>
