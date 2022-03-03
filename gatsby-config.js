@@ -3,6 +3,6 @@ module.exports = {
     siteUrl: 'https://echiou.com',
     title: 'stopwatch',
   },
-  pathPrefix: "/stopwatch",
+  pathPrefix: '/stopwatch',
   plugins: ['gatsby-plugin-sass'],
 };

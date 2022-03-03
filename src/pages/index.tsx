@@ -1,9 +1,9 @@
 import 'cirrus-ui';
 import * as React from 'react';
-import "@fontsource/cutive-mono";
+import '@fontsource/cutive-mono';
 
 const mono = {
-  fontFamily: "Cutive Mono",
+  fontFamily: 'Cutive Mono',
 };
 
 class Timer extends React.Component<any, any> {
@@ -78,21 +78,20 @@ class Timer extends React.Component<any, any> {
     return (
       <div className="row u-text-center">
         <div className="col-12">
-          <h1 className="mt-1" style={mono}>{this.formatTime(this.state.cs)}</h1>
+          <h1 style={mono}>{this.formatTime(this.state.cs)}</h1>
         </div>
         <div className="col-12">
-          <button
-            onClick={this.startStop}
-            className="btn-small btn-dark outline mx-1 mb-1 b-0"
-          >
-            Start/Stop
-          </button>
-          <button
-            onClick={this.reset}
-            className="btn-small btn-dark outline mx-1 mb-1 b-0"
-          >
-            Reset
-          </button>
+          <div className="btn-group">
+            <button
+              onClick={this.startStop}
+              className="btn-small btn-dark outline"
+            >
+              Start/Stop
+            </button>
+            <button onClick={this.reset} className="btn-small btn-dark outline">
+              Reset
+            </button>
+          </div>
         </div>
       </div>
     );

@@ -9,11 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout"
+      - name: 'Checkout'
         uses: actions/checkout@v2
-      - name: "Install Dependencies"
+      - name: 'Install Dependencies'
         run: yarn
-      - name: "Github Pages Deployment"
+      - name: 'Github Pages Deployment'
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           yarn deploy -u "github-actions-bot <support+actions@github.com>"
